@@ -1,0 +1,9 @@
+1 - Se llama cuenta con ganchos porque las subclases de Cuenta se "enganchan" a algunos métodos de la superclase, sobreescribiédolos, mientas que los demás métodos se mantienen y son heredados.
+
+2 - This es un puntero que apunta a la clase que lo está llamando. Si es CuentaCorriente apunta a ella y lo mismo con CajaDeAhorro.
+
+3 - Tienen visibilidad protegido para que no puedan utilizarse en otro paquete (ya que son métodos sensibles), pero si en las subclases (y en el mismo paquete, que es dónde están las subclases) para facilitar la implementación.
+
+4 - Si, se puede. Dado que ambas heredan del mismo padre y, porlo tanto, tieen sus mismos métodos extraer, transferir, depositar, etc.
+
+5 - Se declara como "public abstract algo();" con ; al final en lugar de {} porque no posee implementación, funciona como las interfaces. Si un método abstracto no se implementa no se puede compilar porque Java nos obliga a implementar cualquier método abstracto o de una interface cuando se lo hereda en otra clase. 
